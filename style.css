@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhai 2", serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1b141b;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  overflow-y: auto;
+  position: relative;
+  border: 2px solid black;
+  width: 290px;
+  height: 550px;
+  background: #0000008a;
+  border-radius: 10px;
+}
+.instagram {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.insta-img {
+  right: 8px;
+  position: relative;
+  filter: contrast(2);
+  mix-blend-mode: color-dodge;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.instagram i {
+  color: white;
+  position: relative;
+  right: 33px;
+}
+.like-msg {
+  justify-content: flex-end;
+  height: 50px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.like-msg i {
+  position: relative;
+  left: 2px;
+  color: white;
+  font-size: 20px;
+}
+.message {
+  filter: contrast(2);
+  mix-blend-mode: color-dodge;
+  width: 30%;
+  height: 64%;
+  object-fit: cover;
+  object-position: center;
+}
+.insta-story {
+  overflow-x: auto;
+  padding: 5px 0px 0px 10px;
+  height: 85px;
+  width: 100%;
+  border-bottom: 1px solid #71717165;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+.insta-story::-webkit-scrollbar {
+  display: none;
+}
+.story {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 4, 0);
+  overflow: hidden;
+  display: inline-block;
+}
+.story img {
+  border-radius: 50%;
+  border: 3px solid black;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.full-screen {
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+}
+.name-pro {
+  left: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+.border {
+  display: flex;
+  width: 40px;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 50%;
+}
+.name-pro img {
+  border: 2px solid rgb(0, 0, 0);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.profile i {
+  margin-right: 15px;
+  color: white;
+}
+.user-name {
+  font-weight: lighter;
+  padding: 5px 5px;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.post {
+  position: relative;
+  width: 100%;
+  height: 63%;
+}
+.post img {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#like-btn {
+  z-index: 1;
+  font-size: 60px;
+  font-weight: 100;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: translate 0.2s ease-in-out;
+}
+
+.coment i {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0px 1px;
+  color: white;
+}
+.coment {
+  overflow-y: hidden;
+}
+.coment i span {
+  color: white;
+  font-size: 12px;
+}
+.coment p {
+  padding: 0px 5px;
+  color: white;
+  font-size: 10px;
+}
+
+.all-btn {
+  justify-content: center;
+  height: 33px;
+  width: 286px;
+  z-index: 1;
+  align-items: center;
+  background: #000000f6;
+  position: fixed;
+  gap: 25px;
+  display: flex;
+}
+.all-btn i {
+  padding: 0px 5px;
+  font-size: 23px;
+  color: white;
+}
+.all-btn img {
+  border: 2px solid rgb(0, 0, 0);
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.border-cornr {
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 50%;
+}
+.sec-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+}
+.sec-profile i {
+  margin-right: 15px;
+  color: white;
+}
+.sec-post {
+  position: relative;
+  width: 100%;
+  height: 55%;
+}
+#like-btn2 {
+  z-index: 1;
+  font-size: 60px;
+  font-weight: 100;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: translate 0.2s ease-in-out;
+}
+.sec-post img {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+.third-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+}
+.third-profile i {
+  margin-right: 15px;
+  color: white;
+}
+.third-post {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+.third-post img {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+#like-btn3 {
+  z-index: 1;
+  font-size: 60px;
+  font-weight: 100;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: translate 0.2s ease-in-out;
+}
